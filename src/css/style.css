@@ -1,0 +1,113 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+html {
+    box-sizing: border-box;   /* enabled also in Bootstrap */
+    height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Responsive Full Background Image Using CSS */
+body {
+    /* background-image: url(/data/1522635.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color:#928a8a; */
+    height: 100%;
+}
+
+/*--------------------------------------------*/
+
+
+.workspace {
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(#653d84, #332042);
+    /* position: absolute; */
+    /* margin: auto; */
+    /* padding: auto; */
+    overflow:auto
+}
+.workspace_box {
+    width: 1050px; 
+    margin: 5% auto;
+    /* height: 100%; */
+    /* position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    /* overflow: hidden; */
+}
+.workspace_box .leftBox{
+    width: 65%;
+    /* height: 100%; */
+    padding: 25px 25px;
+}
+.workspace_box .rightBox{
+    width: 35%;
+    /* height: 100%   */
+}
+.leftBox .students a {
+    color: #452A5A;
+    font-weight: 400;
+}
+.leftBox .students{
+  /* height: 20px */
+}
+.leftBox .contact{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    /* height: 100%; */
+    width: 73%;
+    margin: auto;
+}
+.leftBox h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.leftBox input {
+    border: none;
+    width: 80%;
+    margin: 15px 0px;
+    border-bottom: 1px solid #4f30677d;
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+.leftBox{
+	background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+    background: #583672;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
+
+.iconColor {
+    color: blue;
+}
+
