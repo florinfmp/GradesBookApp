@@ -21,7 +21,25 @@
 
       <!-- LEFT SIDE BOX -->
 			<div class="leftBox" style="border: solid 1px red">
+        <!-- App Name -->
+        <h4 class="text-center">Grades Register Book</h4>
+        <!-- Input -->
+        <div id="inputContainer" class="mb-3 mx-5" style="border: solid 1px black;">
+          <div class="input-group" style="borderXXX: solid 1px rgb(236, 32, 32);">
+              <input id="inputField" type="text" class="form-control formInputValid" placeholder="Insert here ...">
+              <button id="addItemBtn" class="btn btn-outline-success btn-sm" type="button"><i class="bi bi-plus-circle"></i>Add Student</button>
+          </div>
+          <small id="errorMessage" class="visibleOff">Please insert a valid item</small>
+        </div>
+
           <div class="students">
+            <!-- Sort -->
+            <div class="d-flex">
+              <i id="sortNameAsc" class="fas fa-sort-alpha-up ms-5 me-1" style="border: solid 1px red;"></i>
+              <i id="sortNameDes" class="fas fa-sort-alpha-down-alt mx-1" style="border: solid 1px red;"></i>
+              <i id="clearSort" class="fas fa-eraser ms-1" style="border: solid 1px red;"></i>
+            </div>
+
             <!-- ACCORDION BOOTSTRAP 5 -->
             <div class="accordion" id="accordionExample">
               <!-- Student Nr. 1 -->
@@ -65,6 +83,7 @@
                               <p class="m-0 p-0">Assesment</p>
                               <p class="mb-1 p-0" style="border: solid 1px green;">Not Passed</p>
                             </div>
+                            <button type="button" class="btn-close" aria-label="Close"></button>
                           </div>
                         </div>
                       </div>
@@ -111,9 +130,460 @@
                               <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
                             </div>
                             <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
-                              <p class="m-0 p-0">Status</p>
+                              <p class="m-0 p-0">Assesment</p>
                               <p class="mb-1 p-0" style="border: solid 1px green;">Passed</p>
                             </div>
+                            <button type="button" class="btn-close" aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Student Nr. 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">#1 Donald Trump</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse showXXX" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <!-- Student Infos -->
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 g-0">
+                          <div class="d-flex justify-content-between align-items-center" style="border: solid 1px red; height: 59px;">
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue">
+                              <p class="m-0 p-0">Involvment</p>
+                              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected disabled>Choose</option>
+                                <option value="1" style="border: solid 1px green;">Active</option>
+                                <option value="2">Pasive</option>
+                                <option value="3">None</option>
+                              </select>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Average</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Project</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Exam</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Final Grade</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Assesment</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">Passed</p>
+                            </div>
+                            <button type="button" class="btn-close" aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                            <!-- Student Nr. 2 -->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">#1 Donald Trump</button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse showXXX" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <!-- Student Infos -->
+                                  <div class="container-fluid">
+                                    <div class="row">
+                                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 g-0">
+                                        <div class="d-flex justify-content-between align-items-center" style="border: solid 1px red; height: 59px;">
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue">
+                                            <p class="m-0 p-0">Involvment</p>
+                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                              <option selected disabled>Choose</option>
+                                              <option value="1" style="border: solid 1px green;">Active</option>
+                                              <option value="2">Pasive</option>
+                                              <option value="3">None</option>
+                                            </select>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Average</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Project</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Exam</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Final Grade</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Assesment</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">Passed</p>
+                                          </div>
+                                          <button type="button" class="btn-close" aria-label="Close"></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                                          <!-- Student Nr. 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">#1 Donald Trump</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse showXXX" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <!-- Student Infos -->
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 g-0">
+                          <div class="d-flex justify-content-between align-items-center" style="border: solid 1px red; height: 59px;">
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue">
+                              <p class="m-0 p-0">Involvment</p>
+                              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected disabled>Choose</option>
+                                <option value="1" style="border: solid 1px green;">Active</option>
+                                <option value="2">Pasive</option>
+                                <option value="3">None</option>
+                              </select>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Average</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Project</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Exam</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Final Grade</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Assesment</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">Passed</p>
+                            </div>
+                            <button type="button" class="btn-close" aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                            <!-- Student Nr. 2 -->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">#1 Donald Trump</button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse showXXX" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <!-- Student Infos -->
+                                  <div class="container-fluid">
+                                    <div class="row">
+                                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 g-0">
+                                        <div class="d-flex justify-content-between align-items-center" style="border: solid 1px red; height: 59px;">
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue">
+                                            <p class="m-0 p-0">Involvment</p>
+                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                              <option selected disabled>Choose</option>
+                                              <option value="1" style="border: solid 1px green;">Active</option>
+                                              <option value="2">Pasive</option>
+                                              <option value="3">None</option>
+                                            </select>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Average</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Project</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Exam</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Final Grade</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Assesment</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">Passed</p>
+                                          </div>
+                                          <button type="button" class="btn-close" aria-label="Close"></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                                          <!-- Student Nr. 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">#1 Donald Trump</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse showXXX" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <!-- Student Infos -->
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 g-0">
+                          <div class="d-flex justify-content-between align-items-center" style="border: solid 1px red; height: 59px;">
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue">
+                              <p class="m-0 p-0">Involvment</p>
+                              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected disabled>Choose</option>
+                                <option value="1" style="border: solid 1px green;">Active</option>
+                                <option value="2">Pasive</option>
+                                <option value="3">None</option>
+                              </select>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Average</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Project</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Exam</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Final Grade</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Assesment</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">Passed</p>
+                            </div>
+                            <button type="button" class="btn-close" aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                            <!-- Student Nr. 2 -->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">#1 Donald Trump</button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse showXXX" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <!-- Student Infos -->
+                                  <div class="container-fluid">
+                                    <div class="row">
+                                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 g-0">
+                                        <div class="d-flex justify-content-between align-items-center" style="border: solid 1px red; height: 59px;">
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue">
+                                            <p class="m-0 p-0">Involvment</p>
+                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                              <option selected disabled>Choose</option>
+                                              <option value="1" style="border: solid 1px green;">Active</option>
+                                              <option value="2">Pasive</option>
+                                              <option value="3">None</option>
+                                            </select>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Average</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Project</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Exam</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Final Grade</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Assesment</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">Passed</p>
+                                          </div>
+                                          <button type="button" class="btn-close" aria-label="Close"></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                                          <!-- Student Nr. 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">#1 Donald Trump</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse showXXX" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <!-- Student Infos -->
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 g-0">
+                          <div class="d-flex justify-content-between align-items-center" style="border: solid 1px red; height: 59px;">
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue">
+                              <p class="m-0 p-0">Involvment</p>
+                              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected disabled>Choose</option>
+                                <option value="1" style="border: solid 1px green;">Active</option>
+                                <option value="2">Pasive</option>
+                                <option value="3">None</option>
+                              </select>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Average</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Project</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Exam</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Final Grade</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Assesment</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">Passed</p>
+                            </div>
+                            <button type="button" class="btn-close" aria-label="Close"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                            <!-- Student Nr. 2 -->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">#1 Donald Trump</button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse showXXX" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <!-- Student Infos -->
+                                  <div class="container-fluid">
+                                    <div class="row">
+                                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 g-0">
+                                        <div class="d-flex justify-content-between align-items-center" style="border: solid 1px red; height: 59px;">
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue">
+                                            <p class="m-0 p-0">Involvment</p>
+                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                              <option selected disabled>Choose</option>
+                                              <option value="1" style="border: solid 1px green;">Active</option>
+                                              <option value="2">Pasive</option>
+                                              <option value="3">None</option>
+                                            </select>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Average</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Project</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Exam</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Final Grade</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                                          </div>
+                                          <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                                            <p class="m-0 p-0">Assesment</p>
+                                            <p class="mb-1 p-0" style="border: solid 1px green;">Passed</p>
+                                          </div>
+                                          <button type="button" class="btn-close" aria-label="Close"></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                                          <!-- Student Nr. 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">#1 Donald Trump</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse showXXX" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <!-- Student Infos -->
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 g-0">
+                          <div class="d-flex justify-content-between align-items-center" style="border: solid 1px red; height: 59px;">
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue">
+                              <p class="m-0 p-0">Involvment</p>
+                              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected disabled>Choose</option>
+                                <option value="1" style="border: solid 1px green;">Active</option>
+                                <option value="2">Pasive</option>
+                                <option value="3">None</option>
+                              </select>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Average</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Project</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Exam</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Final Grade</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">10</p>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px blue; height: 100%;">
+                              <p class="m-0 p-0">Assesment</p>
+                              <p class="mb-1 p-0" style="border: solid 1px green;">Passed</p>
+                            </div>
+                            <button type="button" class="btn-close" aria-label="Close"></button>
                           </div>
                         </div>
                       </div>
@@ -124,25 +594,130 @@
 
             </div>
           </div>
-          <!-- <div class="contact" style="border: solid 1px blue">
-            <form action="">
-              <h3>SIGN IN</h3>
-              <input type="text" placeholder="USERNAME">
-              <input type="text" placeholder="PASSWORD">
-              <button class="submit">LET'S GO</button>
-            </form>
-          </div> -->
         </div>
 
       <!-- RIGHT SIDE BOX -->
 			<div class="rightBox" style="border: solid 1px red;">
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="d-flex flex-column justify-content-between align-items-center" style="border: solid 1px yellow; width: 100%;">
+          <!-- Student Profile -->
+          <div class="card" styleXXX="width: 18rem;" style="border: solid 1px rgb(25, 44, 218); width: 100%;">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Grades</a>
+                </li>
+              </ul>
+            </div>
+            <div class="profilePhotoParent" style="border: solid 1px black;">
+              <img src="./data/students/ruby.jpg" class="card-img-top img-fluid profilePhoto" alt="student image" style="border: solid 1px yellow;">
+            </div>
+            
+            <div class="card-body" style="border: solid 1px rgb(230, 110, 12); width: 100%;">
+              <!-- Contact Details -->
+              <div class="d-none" style="border: solid 1px rgb(31, 245, 24); width: 100%;">
+                <h5 class="card-title">Contact Details</h5>
+                <div id="dataInBody" class="d-flex" style="border: solid 1px rgb(11, 176, 241);">
+                  <div class="mb-1 d-flex flex-column justify-content-start align-items-start" style="border: solid 1px rgb(46, 124, 9);">
+                    <p class="mb-1 height1Row" style="border: solid 1px yellow;">Gender</p>
+                    <p class="mb-1 height1Row" style="border: solid 1px yellow;">Age</p>
+                    <p class="mb-1 height1Row" style="border: solid 1px yellow;">Birthdate</p>
+                    <p class="mb-1 height2Row" style="border: solid 1px yellow;">Address</p>
+                    <p class="mb-1 height2Row" style="border: solid 1px yellow;">Email</p>
+                    <p class="mb-1 height1Row" style="border: solid 1px yellow;">Mobile</p>
+                    <p class="mb-1 height1Row" style="border: solid 1px yellow;">Skype</p>
+                    <p class="mb-0 height3Row" style="border: solid 1px yellow;">Github</p>
+                  </div>
+                  <div class="d-flex flex-column justify-content-start align-items-start" style="border: solid 1px rgb(230, 110, 12); width: 370px;">
+                    <p class="mb-1 height1Row" class="" style="border: solid 1px yellow;">Male</p>
+                    <p class="mb-1 height1Row" style="border: solid 1px yellow;">32</p>
+                    <p class="mb-1 height1Row" style="border: solid 1px yellow;">24.09.1991</p>
+                    <p class="mb-1 height2Row" style="border: solid 1px yellow;">99 Str Console Log, judetul Armoniei, tara belsugului, Europa</p> 
+                    <p class="mb-1 height2Row text-break" style="border: solid 1px yellow;">gorgeascadaniela@anamariadous@gmail.com</p>
+                    <p class="mb-1 height1Row" style="border: solid 1px yellow;">0799856236</p>
+                    <p class="mb-1 height1Row" style="border: solid 1px yellow;">xAlin</p>
+                    <p class="mb-0 height3Row text-break" style="border: solid 1px yellow;">code;kjhf;kljshf;lgj'lfkji;lkj;kasdjbhfkljaghlhjas'lkjalsfjh;kjhkjaghskyugewljhfeglkhgfaskgfjhsdgfljhgfkjhgaskjhg</p>
+                  </div>
+                </div>
+                <!-- EDIT BUTTON -->
+                <div class="d-grid col-6 mx-auto my-3">
+                  <button class="btn btn-primary btn-sm" type="button">Edit</button>
+                </div>
+                <!-- <p class="card-text"></p> -->
+              </div>
+              <!-- Student Grades -->
+              <div class="d-noneXXX" style="border: solid 1px rgb(31, 245, 24); width: 100%;">
+                <h5 class="card-title">Student Grades</h5>
+                <div class="d-flex justify-content-end">
+                  <i id="sortNameAsc" class="fas fa-sort-alpha-up me-1" style="border: solid 1px red;"></i>
+                  <i id="sortNameDes" class="fas fa-sort-alpha-down-alt mx-1" style="border: solid 1px red;"></i>
+                  <i id="clearSort" class="fas fa-eraser ms-1 me-3" style="border: solid 1px red;"></i>
+                </div>
+                <!-- Table Head -->
+                <div class="d-flex justify-content-between align-items-center mb-1" style="border: solid 1px red; heightXXX: 61px;">
+                  <p class="m-0 p-0" style="border: solid 1px green;">Id</p>
+                  <p class="m-0 p-0 text-center" style="border: solid 1px green; width: 310px;">Homework Title</p>
+                  <p class="m-0 p-0" style="border: solid 1px green;">Grade</p>
+                  <button type="button" class="btn-close invisible" aria-label="Close"></button>
+                </div>
+                <!-- Grade 1 -->
+                <div class="d-flex justify-content-between align-items-center mb-3" style="border: solid 1px red;">
+                  <p class="m-0 p-0" style="border: solid 1px green;">1</p>
+                  <p class="m-0 p-0 text-center" style="border: solid 1px green; width: 310px;">Adding strings to box</p>
+                  <p class="m-0 p-0" style="border: solid 1px green;">10</p>
+                  <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3" style="border: solid 1px red;">
+                  <p class="m-0 p-0" style="border: solid 1px green;">1</p>
+                  <p class="m-0 p-0 text-center" style="border: solid 1px green; width: 310px;">Adding strings to box</p>
+                  <p class="m-0 p-0" style="border: solid 1px green;">10</p>
+                  <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3" style="border: solid 1px red;">
+                  <p class="m-0 p-0" style="border: solid 1px green;">1</p>
+                  <p class="m-0 p-0 text-center" style="border: solid 1px green; width: 310px;">Adding strings to box</p>
+                  <p class="m-0 p-0" style="border: solid 1px green;">8</p>
+                  <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3" style="border: solid 1px red;">
+                  <p class="m-0 p-0" style="border: solid 1px green;">1</p>
+                  <p class="m-0 p-0 text-center" style="border: solid 1px green; width: 310px;">Adding strings to box</p>
+                  <p class="m-0 p-0" style="border: solid 1px green;">10</p>
+                  <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3" style="border: solid 1px red;">
+                  <p class="m-0 p-0" style="border: solid 1px green;">1</p>
+                  <p class="m-0 p-0 text-center" style="border: solid 1px green; width: 310px;">Adding strings to box</p>
+                  <p class="m-0 p-0" style="border: solid 1px green;">5</p>
+                  <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3" style="border: solid 1px red;">
+                  <p class="m-0 p-0" style="border: solid 1px green;">1</p>
+                  <p class="m-0 p-0 text-center" style="border: solid 1px green; width: 310px;">Adding strings to box</p>
+                  <p class="m-0 p-0" style="border: solid 1px green;">9</p>
+                  <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3" style="border: solid 1px red;">
+                  <p class="m-0 p-0" style="border: solid 1px green;">1</p>
+                  <p class="m-0 p-0 text-center" style="border: solid 1px green; width: 310px;">Adding strings to box</p>
+                  <p class="m-0 p-0" style="border: solid 1px green;">10</p>
+                  <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+            
+             
+             
+                
+                <!-- ADD BUTTON -->
+                <div class="d-grid col-6 mx-auto my-3">
+                  <button class="btn btn-primary btn-sm" type="button">Add</button>
+                </div>
+                <!-- <p class="card-text"></p> -->
+              </div>
+            </div>
           </div>
+          
         </div>
 			</div>
 		</div>
