@@ -140,3 +140,11 @@ body {
 #errorMessage {
     color: red;
 }
+
+.formInputValid {
+    border: solid 2px lightgray;
+}
+
+.formInputInvalid {
+    border: solid 2px red;
+}
